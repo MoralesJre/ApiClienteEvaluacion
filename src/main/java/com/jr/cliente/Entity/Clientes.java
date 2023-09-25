@@ -21,7 +21,7 @@ public class Clientes {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column (name = "idcliente")
 	
-	private Long id_usuario;
+	private Long idcliente;
 	private String primernombre;
 	private String segundonombre;
 	private String otronombre;
@@ -37,8 +37,6 @@ public class Clientes {
 	private String telefono;
 	private String direccion;
 	private Timestamp fechacreacion;
-	private String usuario_mod;
-	private String estado;
 	public String getPrimernombre() {
 		return primernombre;
 	}
@@ -129,17 +127,6 @@ public class Clientes {
 	public void setFechacreacion(Timestamp fechacreacion) {
 		this.fechacreacion = fechacreacion;
 	}
-	public String getUsuario_mod() {
-		return usuario_mod;
-	}
-	public void setUsuario_mod(String usuario_mod) {
-		this.usuario_mod = usuario_mod;
-	}
-	public String getEstado() {
-		return estado;
-	}
-	public void setEstado(String estado) {
-		this.estado = estado;
-	}
+
 
 }
